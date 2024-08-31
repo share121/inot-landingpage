@@ -1,0 +1,20 @@
+{
+    "team":
+    [
+        {
+            "title": "主力开发者",
+            "name": "Share121",
+            "profile": "/team/c1.png"
+        },
+        {
+            "title": "社区运维",
+            "name": "VacuolePao",
+            "profile": "/team/c2.png"
+        },
+        {
+            "title": "贡献者",
+            "name": "Dave_12138",
+            "profile": "/team/c3.png"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name1": "下载客户端",
+        "name2": "Download Client",
+        "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+        "arrow": "./services/ag.svg",
+        "link": "https://github.com/share121/inter-knot/releases",
+        "image": "./services/01.svg"
+    },
+    {
+        "id": 2,
+        "name1": "在线体验",
+        "name2": "Inot Online",
+        "background": "h-[310px] p-12 bg-lime rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+        "arrow": "./services/ag.svg",
+        "link": "https://next.inot.top",
+        "image": "./services/02.svg"
+    },
+    {
+        "id": 3,
+        "name1": "加入社区",
+        "name2": "Discord Community",
+        "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
+        "arrow": "./services/aw.svg",
+        "link": "/community",
+        "image": "./services/03.svg"
+    },
+    {
+        "id": 4,
+        "name1": "查看文档",
+        "name2": "Docs",
+        "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+        "arrow": "./services/ag.svg",
+        "link": "https://d.inot.top",
+        "image": "./services/04.svg"
+    },
+    {
+        "id": 5,
+        "name1": "新内容介绍",
+        "name2": "What's New",
+        "background": "h-[310px] p-12 bg-lime rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
+        "arrow": "./services/ag.svg",
+        "link": "./",
+        "image": "./services/05.svg"
+    },
+    {
+        "id": 6,
+        "name1": "开发计划",
+        "name2": "Development Plan",
+        "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
+        "arrow": "./services/aw.svg",
+        "link": "./",
+        "image": "./services/06.svg"
+    }
+]
