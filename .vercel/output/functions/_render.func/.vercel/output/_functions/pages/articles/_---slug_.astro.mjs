@@ -2,7 +2,7 @@
 import { c as createComponent, r as renderTemplate, a as renderComponent, b as createAstro, m as maybeRenderHead, d as addAttribute } from '../../chunks/astro/server_Clts2hpF.mjs';
 import 'kleur/colors';
 import { $ as $$Container, a as $$Layout } from '../../chunks/Layout_CvvZSb-u.mjs';
-import { a as getEntry } from '../../chunks/_astro_content_7pCqYa46.mjs';
+import { a as getEntry } from '../../chunks/_astro_content_DAvqhedX.mjs';
 import { f as formatDate } from '../../chunks/utils_BW1fk8xr.mjs';
 export { renderers } from '../../renderers.mjs';
 

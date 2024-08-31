@@ -4,7 +4,7 @@ import 'kleur/colors';
 import { $ as $$Container, a as $$Layout } from '../chunks/Layout_CvvZSb-u.mjs';
 import { f as formatDate } from '../chunks/utils_BW1fk8xr.mjs';
 import 'clsx';
-import { g as getCollection } from '../chunks/_astro_content_7pCqYa46.mjs';
+import { g as getCollection } from '../chunks/_astro_content_DAvqhedX.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$ArticleIcon = createComponent(($$result, $$props, $$slots) => {
