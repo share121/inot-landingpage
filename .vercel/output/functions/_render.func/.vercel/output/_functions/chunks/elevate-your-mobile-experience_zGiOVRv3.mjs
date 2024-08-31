@@ -1,5 +1,5 @@
 async function getMod() {
-						return import('./elevate-your-mobile-experience_3fHNkHQf.mjs');
+						return import('./elevate-your-mobile-experience_BpV5HU0o.mjs');
 					}
 					const collectedLinks = [];
 					const collectedStyles = [];

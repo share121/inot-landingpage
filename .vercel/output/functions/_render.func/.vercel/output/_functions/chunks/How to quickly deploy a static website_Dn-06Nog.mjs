@@ -1,5 +1,5 @@
 async function getMod() {
-						return import('./How to quickly deploy a static website_BwA42Ojq.mjs');
+						return import('./How to quickly deploy a static website_D4pHVaJT.mjs');
 					}
 					const collectedLinks = [];
 					const collectedStyles = [];

@@ -1,5 +1,5 @@
 async function getMod() {
-						return import('./cutting-edge-tablets_BLhZBCpO.mjs');
+						return import('./cannon-excellence_DDyuEBRi.mjs');
 					}
 					const collectedLinks = [];
 					const collectedStyles = [];

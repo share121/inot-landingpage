@@ -1,5 +1,5 @@
 async function getMod() {
-						return import('./cannon-excellence_BxyrFf0n.mjs');
+						return import('./guardian-of-the-digital-realm_BoukM4Kp.mjs');
 					}
 					const collectedLinks = [];
 					const collectedStyles = [];

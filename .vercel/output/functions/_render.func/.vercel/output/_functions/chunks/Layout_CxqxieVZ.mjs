@@ -1,4 +1,4 @@
-import { c as createComponent, r as renderTemplate, m as maybeRenderHead, i as renderSlot, a as renderComponent, d as addAttribute, b as createAstro, j as renderHead } from './astro/server_Clts2hpF.mjs';
+import { c as createComponent, r as renderTemplate, m as maybeRenderHead, i as renderSlot, a as renderComponent, d as addAttribute, b as createAstro, j as renderHead } from './astro/server_W4RunM5f.mjs';
 import 'kleur/colors';
 /* empty css                         */
 import 'clsx';
@@ -62,7 +62,7 @@ const $$ViewTransitions = createComponent(($$result, $$props, $$slots) => {
   Astro2.self = $$ViewTransitions;
   const { fallback = "animate" } = Astro2.props;
   return renderTemplate`<meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback"${addAttribute(fallback, "content")}>`;
-}, "D:/Dev/Landingpage/node_modules/astro/components/ViewTransitions.astro", void 0);
+}, "D:/Dev/Landingpage/node_modules/.pnpm/astro@4.15.1_@types+node@16.18.11_rollup@4.21.2_typescript@5.5.4/node_modules/astro/components/ViewTransitions.astro", void 0);
 
 const $$Astro = createAstro();
 const $$Layout = createComponent(($$result, $$props, $$slots) => {

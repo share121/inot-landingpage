@@ -1,7 +1,7 @@
 import { Traverse } from 'neotraverse/modern';
 import pLimit from 'p-limit';
-import { r as removeBase, i as isRemotePath, V as VALID_INPUT_FORMATS, A as AstroError, U as UnknownContentCollectionError, p as prependForwardSlash } from './astro/assets-service_B9gDs9xy.mjs';
-import { c as createComponent, f as renderUniqueStylesheet, g as renderScriptElement, h as createHeadAndContent, r as renderTemplate, a as renderComponent, u as unescapeHTML } from './astro/server_Clts2hpF.mjs';
+import { r as removeBase, i as isRemotePath, V as VALID_INPUT_FORMATS, A as AstroError, U as UnknownContentCollectionError, p as prependForwardSlash } from './astro/assets-service_pkTuGmSk.mjs';
+import { c as createComponent, f as renderUniqueStylesheet, g as renderScriptElement, h as createHeadAndContent, r as renderTemplate, a as renderComponent, u as unescapeHTML } from './astro/server_W4RunM5f.mjs';
 import 'kleur/colors';
 import * as devalue from 'devalue';
 
@@ -18,7 +18,9 @@ function imageSrcToImportId(imageSrc, filePath) {
     return;
   }
   const params = new URLSearchParams(CONTENT_IMAGE_FLAG);
-  params.set("importer", filePath);
+  if (filePath) {
+    params.set("importer", filePath);
+  }
   return `${imageSrc}?${params.toString()}`;
 }
 
@@ -124,7 +126,7 @@ function createGetCollection({
       const { default: imageAssetMap } = await import('./_astro_asset-imports_D9aVaOQr.mjs');
       const result = [];
       for (const rawEntry of store.values(collection)) {
-        const data = rawEntry.filePath ? updateImageReferencesInData(rawEntry.data, rawEntry.filePath, imageAssetMap) : rawEntry.data;
+        const data = updateImageReferencesInData(rawEntry.data, rawEntry.filePath, imageAssetMap);
         const entry = {
           ...rawEntry,
           data,
@@ -212,10 +214,8 @@ function createGetEntry({
         console.warn(`Entry ${collection} → ${lookupId} was not found.`);
         return;
       }
-      if (entry2.filePath) {
-        const { default: imageAssetMap } = await import('./_astro_asset-imports_D9aVaOQr.mjs');
-        entry2.data = updateImageReferencesInData(entry2.data, entry2.filePath, imageAssetMap);
-      }
+      const { default: imageAssetMap } = await import('./_astro_asset-imports_D9aVaOQr.mjs');
+      entry2.data = updateImageReferencesInData(entry2.data, entry2.filePath, imageAssetMap);
       return {
         ...entry2,
         collection
@@ -262,7 +262,7 @@ function updateImageReferencesInData(data, fileName, imageAssetMap) {
         ctx.update(src);
         return;
       }
-      const imported = imageAssetMap.get(id);
+      const imported = imageAssetMap?.get(id);
       if (imported) {
         ctx.update(imported);
       } else {
@@ -371,7 +371,7 @@ const collectionToEntryMap = createCollectionToGlobResultMap({
 });
 
 let lookupMap = {};
-lookupMap = {"blog":{"type":"content","entries":{"capturing-lifes-moments-with-canon-excellence":"/src/content/blog/cannon-excellence.md","guardian-of-the-digital-realm-web-security":"/src/content/blog/guardian-of-the-digital-realm.md","elevate-your-mobile-experience-with-samsung":"/src/content/blog/elevate-your-mobile-experience.md","unleash-creativity-with-these-cutting-edge-tablets":"/src/content/blog/cutting-edge-tablets.md","how-to-quickly-deploy-a-static-website":"/src/content/blog/How to quickly deploy a static website.md"}}};
+lookupMap = {"blog":{"type":"content","entries":{"unleash-creativity-with-these-cutting-edge-tablets":"/src/content/blog/cutting-edge-tablets.md","guardian-of-the-digital-realm-web-security":"/src/content/blog/guardian-of-the-digital-realm.md","capturing-lifes-moments-with-canon-excellence":"/src/content/blog/cannon-excellence.md","elevate-your-mobile-experience-with-samsung":"/src/content/blog/elevate-your-mobile-experience.md","how-to-quickly-deploy-a-static-website":"/src/content/blog/How to quickly deploy a static website.md"}}};
 
 const collectionNames = new Set(Object.keys(lookupMap));
 
@@ -384,7 +384,7 @@ function createGlobLookup(glob) {
 	};
 }
 
-const renderEntryGlob = /* #__PURE__ */ Object.assign({"/src/content/blog/How to quickly deploy a static website.md": () => import('./How to quickly deploy a static website_BGnV33uH.mjs'),"/src/content/blog/cannon-excellence.md": () => import('./cannon-excellence_BIQ24CF6.mjs'),"/src/content/blog/cutting-edge-tablets.md": () => import('./cutting-edge-tablets_FWEasSPB.mjs'),"/src/content/blog/elevate-your-mobile-experience.md": () => import('./elevate-your-mobile-experience_CdLThNjd.mjs'),"/src/content/blog/guardian-of-the-digital-realm.md": () => import('./guardian-of-the-digital-realm_zLrXcGT6.mjs')});
+const renderEntryGlob = /* #__PURE__ */ Object.assign({"/src/content/blog/How to quickly deploy a static website.md": () => import('./How to quickly deploy a static website_Dn-06Nog.mjs'),"/src/content/blog/cannon-excellence.md": () => import('./cannon-excellence_Ctj_O1Ah.mjs'),"/src/content/blog/cutting-edge-tablets.md": () => import('./cutting-edge-tablets_DaiWcx16.mjs'),"/src/content/blog/elevate-your-mobile-experience.md": () => import('./elevate-your-mobile-experience_zGiOVRv3.mjs'),"/src/content/blog/guardian-of-the-digital-realm.md": () => import('./guardian-of-the-digital-realm_DD12ds41.mjs')});
 const collectionToRenderEntryMap = createCollectionToGlobResultMap({
 	globResult: renderEntryGlob,
 	contentDir,
