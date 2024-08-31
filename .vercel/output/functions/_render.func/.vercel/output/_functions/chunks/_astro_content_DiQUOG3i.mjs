@@ -371,7 +371,7 @@ const collectionToEntryMap = createCollectionToGlobResultMap({
 });
 
 let lookupMap = {};
-lookupMap = {"blog":{"type":"content","entries":{"unleash-creativity-with-these-cutting-edge-tablets":"/src/content/blog/cutting-edge-tablets.md","guardian-of-the-digital-realm-web-security":"/src/content/blog/guardian-of-the-digital-realm.md","capturing-lifes-moments-with-canon-excellence":"/src/content/blog/cannon-excellence.md","elevate-your-mobile-experience-with-samsung":"/src/content/blog/elevate-your-mobile-experience.md","how-to-quickly-deploy-a-static-website":"/src/content/blog/How to quickly deploy a static website.md"}}};
+lookupMap = {"blog":{"type":"content","entries":{"unleash-creativity-with-these-cutting-edge-tablets":"/src/content/blog/cutting-edge-tablets.md","elevate-your-mobile-experience-with-samsung":"/src/content/blog/elevate-your-mobile-experience.md","guardian-of-the-digital-realm-web-security":"/src/content/blog/guardian-of-the-digital-realm.md","capturing-lifes-moments-with-canon-excellence":"/src/content/blog/cannon-excellence.md","how-to-quickly-deploy-a-static-website":"/src/content/blog/How to quickly deploy a static website.md"}}};
 
 const collectionNames = new Set(Object.keys(lookupMap));
 
